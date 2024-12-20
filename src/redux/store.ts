@@ -3,6 +3,7 @@ import authUserSlice from './authSlice/authSlice'
 import favoriteMovieSlice from './favoritesSlice/favouritesSlice'
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { persistReducer } from "redux-persist";
+import { FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER } from 'redux-persist';
 const persistConfig = {
     key : "movieApp",
     storage : AsyncStorage
@@ -17,7 +18,14 @@ export type RootState = ReturnType<typeof rootReducer>
 const persistedReducer = persistReducer(persistConfig,rootReducer)
  
 const store = configureStore({
-    reducer:persistedReducer
+    reducer:persistedReducer,
+    middleware: (getDefaultMiddleware) =>
+        getDefaultMiddleware({
+          serializableCheck: {
+            // Ignore Redux Persist actions
+            ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+          },
+        }),
 })
 
 
