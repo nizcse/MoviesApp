@@ -16,7 +16,6 @@ const useDescription = () => {
         dispatch(setFavorite(params?.id))
         :
         dispatch(setUnfavorite(params?.id));
-        dispatch(setName({name:''}))
       }
   return {
     params,
