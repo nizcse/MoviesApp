@@ -18,8 +18,14 @@ const authSlice = createSlice({
     name:'authSlice',
     initialState:initialState,
     reducers:{
-
+        setName:(state,action)=>{
+            state.user=action.payload;
+        },
+        setGenre:(state,action)=>{
+            state.genres=action.payload
+        }
     }
 })
 
 export default authSlice.reducer
+export const {setName,setGenre} = authSlice.actions

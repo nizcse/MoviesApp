@@ -14,15 +14,15 @@ const RootNavigation = () => {
   const {name} = useAppSelector(state=>state.authSlice.user)
   return (
     <NavigationContainer>
-        <Navigator initialRouteName={name.length==0?rootNavigationRouteNames.AUTH:rootNavigationRouteNames.SCREEN_STACK}>
+        <Navigator initialRouteName={name===""?rootNavigationRouteNames.AUTH:rootNavigationRouteNames.SCREEN_STACK}>
           {
-            name.length==0
+            name===""
             ?
             <Group screenOptions={{ headerShown: false }} >
                 <Screen name={rootNavigationRouteNames.AUTH} component={AuthNavigation}/>
             </Group>
             :
-            <Group screenOptions={{ headerShown: true }}>
+            <Group screenOptions={{ headerShown: false }}>
                 <Screen name={rootNavigationRouteNames.SCREEN_STACK} component={ScreenStackNavigation} />
             </Group>
           }

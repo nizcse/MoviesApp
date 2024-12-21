@@ -3,5 +3,5 @@ import { screenStackNavigationRouteNames } from "../routeName/screenStackNavigat
 
 export type screenStackNavigationParams = {
     [screenStackNavigationRouteNames.BOTTOM_TAB]:undefined;
-    [screenStackNavigationRouteNames.DESCRIPTION]:undefined;
+    [screenStackNavigationRouteNames.DESCRIPTION]:Movie;
 }

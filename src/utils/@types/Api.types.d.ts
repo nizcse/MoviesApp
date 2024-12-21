@@ -1,0 +1,1 @@
+interface CallApiParams {method:"get"|"post",subUri:string,query?:string}

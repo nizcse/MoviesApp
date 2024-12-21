@@ -1,5 +1,6 @@
 const colors = {
-    button: '#5664F5',          
+    button: '#5664F5',
+    searchGray:'#94A3B8',          
     secondary: '#F0F0F0',        // Light background color
     white: '#FFFFFF',            // Standard white
     black: '#000000',            // Standard black
@@ -11,7 +12,11 @@ const colors = {
     warning: '#DD6B20',          // Warning orange
     info: '#3182CE', 
     blackText:"#030303",
-    borderColor:'#ECECEC'            // Info blue
+    borderColor:'#ECECEC',
+    textGray:'#6C6C6C',
+    inputGray:"#94A3B8",
+    ratingGray:"#565656",
+    descGray:"#3C3C3C"
   };
   
   export default colors;
