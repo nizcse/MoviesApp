@@ -1,6 +1,6 @@
 # Movies App
 
-A **React Native Expo** app created as an assignment project to fetch movies data from a public API and manage favorites.
+A **React Native Expo** app created to fetch movies data from a public API and manage favorites.
 
 ## Features
 
@@ -56,4 +56,4 @@ No additional configuration is needed for API access.
 
 ---
 
-This project was developed as part of an assignment to demonstrate skills in React Native and Redux.
+This project was developed to practice skills in React Native and Redux.
