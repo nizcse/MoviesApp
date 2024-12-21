@@ -1,4 +1,4 @@
-import { View, Text, Pressable } from 'react-native';
+import { Pressable } from 'react-native';
 import React from 'react';
 import CustomText from '~/components/customText/CustomText';
 import DeviceDimensions from '~/constants/device';

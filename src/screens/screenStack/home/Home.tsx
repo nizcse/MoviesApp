@@ -1,6 +1,5 @@
 import { View, TextInput, StyleSheet, FlatList, KeyboardAvoidingView, ActivityIndicator } from 'react-native';
 import React from 'react';
-import { globalStyles } from '~/constants/globalStyles.style';
 import colors from '~/constants/colors';
 import Icon from '~/assets/images/svg';
 import useHome from './useHome';

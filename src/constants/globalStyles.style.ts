@@ -12,7 +12,7 @@ export const globalStyles = StyleSheet.create({
   },
 });
 
-// Dynamic styles as reusable functions with corrected typing
+
 export const dynamicStyles = {
   buttonStyle: ({ pressed }: { pressed: boolean }): ViewStyle => ({
     opacity: pressed ? 0.7 : 1,

@@ -35,13 +35,13 @@ const ImageComponent = ({
         {...props}
         source={
           isError || !source
-            ? require('../../assets/images/png/Logo.png') // Local placeholder image
+            ? require('../../assets/images/png/Logo.png') 
             : typeof source === 'string'
             ? { uri: source }
             : source
         }
-        placeholder={require('../../assets/images/png/Logo.png')} // Placeholder while loading
-        contentFit={resizeMode} // Resizing mode for expo-image
+        placeholder={require('../../assets/images/png/Logo.png')} 
+        contentFit={resizeMode} 
         style={[
           style,
         ]}

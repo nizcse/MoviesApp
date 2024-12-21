@@ -1,9 +1,6 @@
-import { View, Text } from 'react-native'
-import React from 'react'
 import { RouteProp, useRoute } from '@react-navigation/native';
 import { screenStackNavigationParams } from '~/navigation/params/screenStackNavigationParams';
 import { useAppDispatch, useAppSelector } from '~/customHooks/redux/redux';
-import { setGenre, setName } from '~/redux/authSlice/authSlice';
 import { setFavorite, setUnfavorite } from '~/redux/favoritesSlice/favouritesSlice';
 
 const useDescription = () => {

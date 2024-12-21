@@ -1,4 +1,4 @@
-import { View, Text, StatusBar } from 'react-native'
+import { StatusBar } from 'react-native'
 import React, { useEffect }  from 'react'
 import RootNavigation from './src/navigation/RootNavigation'
 import { SafeAreaProvider } from 'react-native-safe-area-context'

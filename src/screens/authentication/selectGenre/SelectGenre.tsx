@@ -5,8 +5,6 @@ import { svgName } from '~/assets/images/svg/svgName';
 import Icon from '~/assets/images/svg';
 import useSelectGenre from './useSelectGenre';
 import CustomButton from '~/components/customButton/CustomButton';
-import { globalStyles } from '~/constants/globalStyles.style';
-import DeviceDimensions from '~/constants/device';
 
 const SelectGenre = () => {
   const { genreArray, selectedGenre, setSelecetedGenre, handleSubmit } = useSelectGenre();

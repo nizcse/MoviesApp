@@ -1,5 +1,4 @@
-import { View, Text } from 'react-native'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useRoute } from '@react-navigation/core';
 import { useAppDispatch } from '~/customHooks/redux/redux';
 import { setGenre, setName } from '~/redux/authSlice/authSlice';

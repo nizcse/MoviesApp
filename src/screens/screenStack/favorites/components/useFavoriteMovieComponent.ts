@@ -1,5 +1,4 @@
-import { View, Text } from 'react-native'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { callMovieDataById } from '~/utils/api';
 import { useNavigation } from '@react-navigation/native';
 import { screenStackNavigationParams } from '~/navigation/params/screenStackNavigationParams';

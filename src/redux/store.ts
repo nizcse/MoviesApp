@@ -22,7 +22,6 @@ const store = configureStore({
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware({
           serializableCheck: {
-            // Ignore Redux Persist actions
             ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
           },
         }),
