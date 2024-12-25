@@ -20,7 +20,7 @@ A **React Native Expo** app created to fetch movies data from a public API and m
 1. Clone the repository:
    ```bash
    git clone https://github.com/nizcse/MoviesApp.git
-   cd movies-app
+   cd MoviesApp
    ```
 
 2. Install dependencies:
